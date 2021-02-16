@@ -1,0 +1,49 @@
+@media only screen and (max-width: 767px) {
+
+/*------- Menu Button Section Starts -------*/
+
+.fixed-menu-button { bottom: 30px; }
+
+/*------- Menu Button Section Ends -------*/
+
+/*------- Accordion Menu Section Starts -------*/
+
+.fixed-accordion-menu { bottom: 125px; padding: 15px; width: 250px; }
+.fixed-accordion-menu.active { bottom: 100px; }
+
+/*------- Accordion Menu Section Ends -------*/
+
+/*------- Category Section Starts -------*/
+
+.bg-category { padding: 30px 15px; }
+.box-category > h3 {
+  font: 1.8rem/1.2 "Heebo-Regular";
+  margin-bottom: 15px;
+  padding: 30px;
+}
+
+/*------- Category Section Ends -------*/
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/*------- Accordion Menu Section Starts -------*/
+
+.fixed-accordion-menu { bottom: 150px; padding: 15px; width: 250px; }
+.fixed-accordion-menu.active { bottom: 125px; }
+
+/*------- Accordion Menu Section Ends -------*/
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+/*------- Accordion Menu Section Starts -------*/
+
+.fixed-accordion-menu { bottom: 150px; padding: 15px; width: 250px; }
+.fixed-accordion-menu.active { bottom: 125px; }
+
+/*------- Accordion Menu Section Ends -------*/
+
+}

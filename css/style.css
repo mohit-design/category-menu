@@ -1,0 +1,188 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Heebo-Light"; src: url("../fonts/Heebo-Light.ttf"); }
+@font-face { font-family: "Heebo-Regular"; src: url("../fonts/Heebo-Regular.ttf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 1px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+address { margin: 0; padding: 0; }
+li { list-style: none; }
+a,
+a:hover,
+a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0;
+}
+.btn.active,
+.btn:active { -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Menu Button Section Starts -------*/
+
+.fixed-menu-button {
+  bottom: 50px;
+  left: 50%;
+  position: fixed;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.btn-open-menu {
+  background-color: #ff5722;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border-radius: 24px;
+  color: #ffffff;
+  font: 1.6rem/normal "Heebo-Light";
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+.btn-open-menu > i {
+  padding-right: 10px;
+}
+.btn-open-menu:hover,
+.btn-open-menu:focus {
+  color: #ffffff;
+}
+
+/*------- Menu Button Section Ends -------*/
+
+/*------- Accordion Menu Section Starts -------*/
+
+.fixed-accordion-menu {
+  background-color: #ff5722;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border-radius: 24px;
+  left: 50%;
+  opacity: 0;
+  padding: 30px;
+  position: fixed;
+  bottom: 175px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+  visibility: hidden;
+  z-index: 10;
+}
+.fixed-accordion-menu.active {
+  bottom: 150px;
+  opacity: 1;
+  visibility: visible;
+}
+.accordion-menu-listing > li {
+  display: block;
+  margin-bottom: 10px;
+}
+.accordion-menu-listing > li:last-child {
+  margin-bottom: 0;
+}
+.accordion-menu-listing > li > a {
+  color: #ffffff;
+  display: block;
+  font: 1.6rem/1.4 "Heebo-Light";
+  position: relative;
+}
+.accordion-menu-listing > li.active > a,
+.accordion-menu-listing > li > a:hover {
+  color: #000000;
+}
+.accordion-sub-menu-1-listing {
+  background-color: #ffffff;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+  margin-top: 10px;
+  padding: 15px;
+}
+.accordion-sub-menu-1-listing > li { margin-bottom: 10px; }
+.accordion-sub-menu-1-listing > li:last-child { margin-bottom: 0; }
+.accordion-sub-menu-1-listing > li > a {
+  color: #000000;
+  display: block;
+  font: 1.4rem/1.4 "Heebo-Light";
+}
+.accordion-sub-menu-1-listing > li.active > a,
+.accordion-sub-menu-1-listing > li > a:hover {
+  color: #ff5722;
+}
+.accordion-sub-menu-2-listing {
+  background-color: #ff5722;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+  margin-top: 10px;
+  padding: 15px;
+}
+.accordion-sub-menu-2-listing > li { margin-bottom: 10px; }
+.accordion-sub-menu-2-listing > li:last-child { margin-bottom: 0; }
+.accordion-sub-menu-2-listing > li > a {
+  color: #ffffff;
+  display: block;
+  font: 1.4rem/1.4 "Heebo-Light";
+}
+.accordion-sub-menu-2-listing > li.active > a,
+.accordion-sub-menu-2-listing > li > a:hover {
+  color: #000000;
+}
+
+/*------- Accordion Menu Section Ends -------*/
+
+/*------- Category Section Starts -------*/
+
+.bg-category { padding: 30px 15px; }
+.box-category > h3 {
+  background-color: #ffc107;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border-radius: 24px;
+  color: #000000;
+  font: 2.4rem/1.2 "Heebo-Regular";
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+/*------- Category Section Ends -------*/
